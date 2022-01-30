@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/fluency/48/000000/globe-earth.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./dist/style.css" />
+    <title>JS Clock</title>
+  </head>
+  <body>
+    <div class="container flex flex-jc-c flex-ai-c">
+      <div class="card flex flex-jc-c flex-ai-c flex-column">
+        <h1>JS World Clock</h1>
+        <hr />
+        <p id="timeText">Select Timezone please</p>
+
+        <h2>Continent/Area:</h2>
+        <select id="continetsSel" onchange="continetSel(this)">
+          <option value="">--SELECT--</option>
+          <option value="Africa">Africa</option>
+          <option value="America">America</option>
+          <option value="Asia">Asia</option>
+          <option value="Atlantic">Atlantic</option>
+          <option value="Australia">Australia</option>
+          <option value="Europe">Europe</option>
+          <option value="Indian">Indian</option>
+          <option value="Pacific">Pacific</option>
+        </select>
+
+        <h2>Timezone/City:</h2>
+        <select id="timezoneSel" onchange="timezoneSel(this)">
+          <option value="">--SELECT--</option>
+        </select>
+      </div>
+    </div>
+  </body>
+  <script src="./app/js/main.js"></script>
+</html>
